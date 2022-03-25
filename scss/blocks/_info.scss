@@ -1,0 +1,124 @@
+.info{
+  padding-top: 146px;
+  &__list{
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+  }
+  &__img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__item{
+    text-align: center;
+  }
+  &__heading{
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.138462px;
+    color: #36536B;
+  }
+  &__text{
+    max-width: 350px;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #6C8294;
+  }
+  &__writing{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 773px){
+  .info__img{
+    width: 88px;
+    height: 88px;
+  }
+  .info__text{
+    max-width: 223px;
+  }
+}
+@media screen and (max-width: 683px){
+  .info__list{
+    display: block;
+  }
+  .info__text{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    max-width: 328px;
+  }
+}
+.start{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 96px;
+  &__heading{
+    margin-bottom: 40px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+  }
+  &__form{
+    padding-left: 27px;
+    background: #FBFCFE;
+    border-radius: 24px;
+    &:hover{
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+  }
+  &__btn{
+    margin-left: 103px;
+  }
+}
+@media screen and (max-width: 862px){
+  .start{
+    display: block;
+    text-align: center;
+    &__form{
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 445px;
+      height: 48px;
+    }
+    &__btn{
+      margin-left: 10px;
+      
+    }
+  } 
+}
+@media screen and (max-width: 440px){
+  .start__form{
+    display: block;
+    background-color: #edf3f8;
+  }
+  .start__input{
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding: 15px 27px;
+    background: #ffffff;
+    border-radius: 24px;
+    &:hover{
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+  }
+  .start__btn{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
